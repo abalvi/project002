@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import MediaCard from './MediaCard'
+import Gate from './Gate'
 import * as serviceWorker from './serviceWorker';
+import logo from './logo.svg';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MediaCard title="This is the title" body="This is the body" imageUrl={logo}/>
+    <Gate isOpen={true} />
   </React.StrictMode>,
   document.getElementById('root')
 );
